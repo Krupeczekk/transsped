@@ -155,3 +155,61 @@ section {
     border: 1px solid #6991b6;
     border-radius: .2rem;
 }
+
+@media screen and (max-width: 599px) {
+    .page {
+        padding: 3vh 2vh;
+        gap: 5vh;
+    }
+
+    .page-nav {
+        flex-direction: column;
+        gap: 2vh;
+        align-items: flex-start;
+    }
+
+    .page-nav-title,
+    .nothome-nav-title {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    .page-nav-options {
+        flex-direction: column;
+        gap: 1vh;
+        width: 100%;
+    }
+
+    .page-nav-option {
+        width: 100%;
+        justify-content: flex-start;
+        font-size: 0.9rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .about-description {
+        width: 100%;
+        padding: 2vh;
+        font-size: 0.9rem;
+    }
+
+    .calculator-nav {
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .calculator-nav-option {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .nothomve-returnhome {
+        width: 5vh;
+        height: 5vh;
+        font-size: 1rem;
+    }
+}
