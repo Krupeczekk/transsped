@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.1.1/css/pro.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page">
+        <section id="Home">
+            <div style="display: flex; flex-direction: column; gap: 3vh;">
+                <div class="page-nav">
+                    <div class="page-nav-title">Frowarder-Place (TS)</div>
+                    <div class="page-nav-options">
+                        <div class="page-nav-option" onclick="ChangePage('Calculator')">Licznik paczek</div>
+                        <div class="page-nav-option" onclick="ChangePage('Definitions')">Definicje</div>
+                        <div class="page-nav-option" onclick="ChangePage('Tutorials')">Poradniki</div>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </div>
+
+            <div class="about-wrapper">
+                <div class="about-title">Frowarder-Place</div>
+                <div class="about-description">
+                    <p style="width: 80%; text-align: center;">Witajcie na specjalnie dedykowanej stronie dla klasy
+                        spedytorów! Jest to strona, która ma za zadanie ułatwić pracę nad róznego typu zadaniami
+                        związanymi z pracą spedytora. Znajdziesz tu poniżej wymienione ułatwienia:</p>
+                    <ul>
+                        <li>Kalkulator spedytorski (Liczenie paczek, wagi etc.)</li>
+                        <li>Definicje różnych słów</li>
+                        <li>Konwencje oraz umowy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="Calculator" style="display: none;">
+            <div class="nothome-nav">
+                <div class="nothome-nav-title">Frowarder-Place | Kalkulator</div>
+                <div class="nothomve-returnhome" onclick="ChangePage('Home')"><i class="fa-regular fa-house"></i></div>
+            </div>
+            <div class="line"></div>
+            <div class="calculator-nav">
+                <div class="calculator-nav-option">Liczenie paczek - Zwykłe</div>
+                <div class="calculator-nav-option">Liczenie paczek - Zaawansowane</div>
+            </div>
+        </section>
+
+        <div class="page-footer">Strona tworzona przez Krupeczekk</div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
