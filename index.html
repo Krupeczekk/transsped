@@ -18,8 +18,8 @@
                     <div class="page-nav-title">Frowarder-Place (TS)</div>
                     <div class="page-nav-options">
                         <div class="page-nav-option" onclick="ChangePage('Calculator')">Licznik paczek</div>
-                        <div class="page-nav-option" onclick="ChangePage('Definitions')">Definicje</div>
-                        <div class="page-nav-option" onclick="ChangePage('Tutorials')">Poradniki</div>
+                        <!--<div class="page-nav-option" onclick="ChangePage('Definitions')">Definicje</div>-->
+                        <!--<div class="page-nav-option" onclick="ChangePage('Tutorials')">Poradniki</div>-->
                     </div>
                 </div>
                 <div class="line"></div>
@@ -47,8 +47,45 @@
             </div>
             <div class="line"></div>
             <div class="calculator-nav">
-                <div class="calculator-nav-option">Liczenie paczek - Zwykłe</div>
-                <div class="calculator-nav-option">Liczenie paczek - Zaawansowane</div>
+                <div class="calculator-nav-option" id="normalcalc">Liczenie paczek - Proste</div>
+                <div class="calculator-nav-option selected" id="advencedcalc">Liczenie paczek - Zaawansowane</div>
+            </div>
+            <div class="calculator-container">
+                <div class="calculator-wrapper">
+                    <!--<div class="input-title">Wymiary PJŁ (Długość x Szerokość) [mm]</div>-->
+                    <div class="input-title">Wymiary PJŁ (Wysokość) [mm]</div>
+                    <div class="inputs">
+                        <!--<input type="text" placeholder="Długość pjł" id="pjllength">
+                        <input type="text" placeholder="Szerokość pjł" id="pjlwidth">-->
+                        <input type="text" placeholder="Wysokość pjł" id="pjlheight">
+                    </div>
+                </div>
+                <div class="calculator-wrapper">
+                    <div class="input-title">Wymiary palety (Długość x Szerokość) [mm]</div>
+                    <div class="inputs">
+                        <input type="text" placeholder="Długość palety" id="paletelength">
+                        <input type="text" placeholder="Szerokość palety" id="paletewidth">
+                        <input type="text" placeholder="Wysokość palety" id="paleteheight">
+                    </div>
+                </div>
+                <div class="calculator-wrapper">
+                    <div class="input-title">Wymiary paczki (Długość x Szerokość) [mm]</div>
+                    <div class="inputs">
+                        <input type="text" placeholder="Długość paczki" id="packlength">
+                        <input type="text" placeholder="Szerokość paczki" id="packwidth">
+                        <input type="text" placeholder="Wysokość paczki" id="packheight">
+                    </div>
+                </div>
+                <div class="calculator-results">
+                    <div class="calculator-results-title">Wynik</div>
+                    <div class="calculator-results-results">
+                        <div class="calculator-result" id="onelayerpackscount">Ilość paczek w jednej warstwie na palecie: <span>15</span></div>
+                        <div class="calculator-result" id="allpackscount">Ilość wszystkich paczek na palecie: 40</div>
+                        <div class="calculator-result" id="pjlweightnopalete">Waga PJŁ (Bez palety): 400kg</div>
+                        <div class="calculator-result" id="pjlweightpalete">Waga PJŁ (Z paletą): 425kg</div>
+                    </div>
+                </div>
+                <div class="button" id="policz">Policz</div>
             </div>
         </section>
 
